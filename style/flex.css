@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+.box {
+  background-color: aqua;
+  border: 2px solid tomato;
+  padding: 10px;
+  border-radius: 15px;
+}
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px dotted rgb(9, 9, 9);
+  border-radius: 10px;
+}
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .box {
+    background-color: rgb(157, 131, 133);
+    border: 2px solid purple;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-2 {
+    justify-content: center;
+    background-color: rgb(74, 74, 213);
+  }
+  .item {
+    text-align: center;
+  }
+}
